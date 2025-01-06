@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurRate</title>
+    <link rel="icon" type="image/png" href="./public/icon-192x192.png">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="manifest" href="./src/manifest.json">
+</head>
+<body>
+    <div class="widget">
+        <h1>Currency Rates (Base: SGD)</h1>
+        <div class="currency-row">
+            <span class="currency-code">SGD</span>
+            <span class="currency-rate">1.0000</span>
+        </div>
+        <div class="currency-row">
+            <span class="currency-code">AUD</span>
+            <span id="aud-rate" class="currency-rate">--</span>
+        </div>
+        <div class="currency-row">
+            <span class="currency-code">INR</span>
+            <span id="inr-rate" class="currency-rate">--</span>
+        </div>
+        <div class="currency-row">
+            <span class="currency-code">USD</span>
+            <span id="usd-rate" class="currency-rate">--</span>
+        </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
