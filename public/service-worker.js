@@ -2,8 +2,8 @@ const CACHE_NAME = 'currency-widget-v1';
 const ASSETS = [
   '/',
   '/index.html',
-  '/style.css',
-  '/main.js',
+  '/src/style.css',
+  '/src/main.js',
   '/manifest.json',
   '/icon-192x192.png',
   '/icon-512x512.png'
