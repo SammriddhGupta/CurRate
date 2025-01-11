@@ -10,22 +10,29 @@
 </head>
 <body>
     <div class="widget">
-        <h1>Currency Rates (Base: SGD)</h1>
-        <div class="currency-row">
-            <span class="currency-code">SGD</span>
-            <span class="currency-rate">1.0000</span>
+        <h1>Currency Rates</h1>
+        <div class="currency-selector">
+            <label for="base-currency">Base Currency:</label>
+            <input type="text" id="base-currency" placeholder="Enter 3 digit code (eg: USD)" maxlength="3" value="USD">
         </div>
-        <div class="currency-row">
-            <span class="currency-code">AUD</span>
-            <span id="aud-rate" class="currency-rate">--</span>
+        <div id="currency-list">
+            <div class="currency-row">
+                <span class="currency-code">SGD</span>
+                <span class="currency-rate">--</span>
+            </div>
+            <div class="currency-row">
+                <span class="currency-code">AUD</span>
+                <span class="currency-rate">--</span>
+            </div>
+            <div class="currency-row">
+                <span class="currency-code">INR</span>
+                <span class="currency-rate">--</span>
+            </div>
         </div>
-        <div class="currency-row">
-            <span class="currency-code">INR</span>
-            <span id="inr-rate" class="currency-rate">--</span>
-        </div>
-        <div class="currency-row">
-            <span class="currency-code">USD</span>
-            <span id="usd-rate" class="currency-rate">--</span>
+        <div class="add-currency">
+            <label for="new-currency">Add Currency:</label>
+            <input type="text" id="new-currency" placeholder="Enter 3 digit code (eg: EUR)" maxlength="3">
+            <button id="add-currency-btn">Add</button>
         </div>
     </div>
     <script type="module" src="./src/main.js"></script>

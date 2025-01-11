@@ -7,6 +7,7 @@ body {
   margin: 0;
   background-color: #f4f4f9;
 }
+
 .widget {
   background: white;
   padding: 20px;
@@ -15,12 +16,30 @@ body {
   text-align: center;
   width: 90%;
   max-width: 300px;
+
 }
+
+.currency-selector, .add-currency {
+  margin: 10px 0;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input {
+  width: 150px;
+}
+
 h1 {
   font-size: 20px;
   margin-bottom: 20px;
   color: #333;
 }
+
 .currency-row {
   display: flex;
   justify-content: space-between;
@@ -29,10 +48,12 @@ h1 {
   background-color: #f9f9f9;
   border-radius: 5px;
 }
+
 .currency-code {
   font-weight: bold;
   color: #555;
 }
+
 .currency-rate {
   color: #007BFF;
 }
